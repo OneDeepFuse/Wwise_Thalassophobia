@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6316F2D2-DEE4-49B6-9B98-56F8B544EC26}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Thalassophobia" ID="{6316F2D2-DEE4-49B6-9B98-56F8B544EC26}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="AURO-3D" ID="{36E92E82-6EB7-4191-BFE3-8583EE84C231}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{73ED2F42-E3F7-4B62-90A0-5A3D55B98650}" WorkUnitID="{02F66276-338A-4649-9B78-529A77C7057E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{EF2E8A78-E2B9-4028-B788-E310B7FBEFBD}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="AMBIANCES" ID="{617B73DA-CF50-4B8D-B3AA-30353AF15409}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="16"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="PERSONNAGE" ID="{A742B190-DA2B-4334-8672-7A2B2B392E83}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

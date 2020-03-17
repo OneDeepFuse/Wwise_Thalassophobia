@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B264E82C-1331-4EE0-AC05-83635FD510F6}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Thalassophobia" ID="{B264E82C-1331-4EE0-AC05-83635FD510F6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{73ED2F42-E3F7-4B62-90A0-5A3D55B98650}" WorkUnitID="{02F66276-338A-4649-9B78-529A77C7057E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Stereo" ID="{140A6440-0658-4165-A8F8-0F5C24D68495}"/>
+						<Bus Name="AURO-3D" ID="{E9F6ECC0-2104-48CC-AB44-01B70189FF9D}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>761327882</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Medium_Room_AHP" ID="{084C1341-345B-44C4-88FE-89EA007AEDB3}" WorkUnitID="{B3C352EE-53F0-4C95-BAA9-B8ECC0034D25}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

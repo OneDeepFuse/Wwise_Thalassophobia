@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{662CE33F-D02A-4219-A40D-196CF2A1B635}" SchemaVersion="94">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{662CE33F-D02A-4219-A40D-196CF2A1B635}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{28C7D31F-13E8-49A3-AA20-84BC73F43AF2}" WorkUnitID="{A1BEB579-2B73-408B-BB97-5C1F569FFE7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="stereo" ID="{140A6440-0658-4165-A8F8-0F5C24D68495}"/>
+						<Bus Name="AURO-3D" ID="{E9F6ECC0-2104-48CC-AB44-01B70189FF9D}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>761327882</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Medium_Room_AHP" ID="{084C1341-345B-44C4-88FE-89EA007AEDB3}" WorkUnitID="{B3C352EE-53F0-4C95-BAA9-B8ECC0034D25}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="Default_Motion_Device" ID="{2AEB418B-6AFE-4CE6-9432-7374EE1031D8}" WorkUnitID="{A1BEB579-2B73-408B-BB97-5C1F569FFE7A}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
